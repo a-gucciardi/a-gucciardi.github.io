@@ -1,1 +1,61 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Arn</title><link>https://a-gucciardi.github.io/posts/</link><description>Recent content in Posts on Arn</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 01 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://a-gucciardi.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Empty</title><link>https://a-gucciardi.github.io/posts/empty/</link><pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate><guid>https://a-gucciardi.github.io/posts/empty/</guid><description/><content type="html"></content></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Arn</title><link>https://a-gucciardi.github.io/posts/</link><description>Recent content in Posts on Arn</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 01 Mar 2022 08:36:33 +0000</lastBuildDate><atom:link href="https://a-gucciardi.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Setting up this site</title><link>https://a-gucciardi.github.io/posts/sitepost/</link><pubDate>Tue, 01 Mar 2022 08:36:33 +0000</pubDate><guid>https://a-gucciardi.github.io/posts/sitepost/</guid><description>I wanted an easy way to have a simple yet custom blog, and customizable without knowing much about front-end development.
+This is when I found out about HUGO. (link)
+Allowing me to deploy a site with a large variety of minimal (or not) themes ready for launch.
+And the best way to then use it for my site is to actually deploy the site online. And a popular and easy way is made thanks to github pages.</description><content type="html"><![CDATA[<p>I wanted an easy way to have a simple yet custom blog, and customizable without knowing much about front-end development.<br>
+This is when I found out about HUGO. (link)</p>
+<p>Allowing me to deploy a site with a large variety of minimal (or not) themes ready for launch.<br>
+And the best way to then use it for my site is to actually deploy the site online. And a popular and easy way is made thanks to github pages. At that point I realised that I could rather use Jekyll, the github default static site builder.  At the moment I am sticking to Hugos based on some technical criterias like &lsquo;Oh I found more simple themes there&rsquo; I will stick with hugo.</p>
+<p>Anyway, what you have to note is that you are going to need 2 git repos to deploy the site. One public and an other private. The good part is that the private one is where you will be able to do all your changes, which will then be affecting your site, without having to touch more than the parts needed in the private directories. This way, if I want to add a new blog page just like this one I juste have to add a single new file. (Markdown or HTML).</p>
+<p>Many guides cover the Hugo installation, but I will just list the steps and commands I used : (mac)</p>
+<ol>
+<li>brew install hugo
+hugo version</li>
+</ol>
+<p>if you don&rsquo;t have git (don&rsquo;t judge) :
+git &ndash;version</p>
+<p>go the directory where you want to setup your whole site directory
+2. cd dir
+hugo new site mysite</p>
+<p>-screenshot of hugo message -</p>
+<p>As advised, it&rsquo;s time to pick a theme, but first let&rsquo;s setup the git repos :
+3. run hugo
+go to public/
+git init
+git add .
+git remote add origin <a href="https://github.com/username/username.github.io">https://github.com/username/username.github.io</a>
+git commit -m “first commit”
+git push origin master</p>
+<ol start="4">
+<li>Private repo :
+cd public
+git init
+git add .
+git remote add origin <a href="https://github.com/username/private_repo_name">https://github.com/username/private_repo_name</a>
+git commit -m “first commit”
+git push origin master</li>
+</ol>
+<p>You can then go to each repo accordingly to change the private/public settings. It is obligatory to have the public part pushed in a public git repo.<br>
+5. add theme :
+pick one and do
+git submodule add <a href="https://github.com/Track3/hermit.git">https://github.com/Track3/hermit.git</a> themes/hermit</p>
+<p>Check on the .gitmodules file on the git repo if you have, this is for github to understand that you have git repos embedded in your main one.
+[submodule &ldquo;public&rdquo;]
+path = public
+url = <a href="https://github.com/user/user.github.io">https://github.com/user/user.github.io</a>
+[submodule &ldquo;themes/hermit&rdquo;]
+path = themes/hermit
+url = <a href="https://github.com/Track3/hermit.git">https://github.com/Track3/hermit.git</a></p>
+<ol start="6">
+<li>
+<p>.nojekyll in public</p>
+</li>
+<li>
+<p>Publication<br>
+This process will make us of the github actions and deploy keys</p>
+</li>
+</ol>
+<p>Okay now you have everything set up, and if you run the cmd hugo server in the general dir you should see your site, to make sure it is generated.<br>
+Next we need to generate a pair of keys by using the following command:</p>
+<p>Finally, create a file in the private repository in the following directory: .github/workflows/deploy.yml.</p>
+<p>Every time you make commits to the private repository, the site will be automatically generated and published on the public repository.</p>
+]]></content></item><item><title>Empty</title><link>https://a-gucciardi.github.io/posts/empty/</link><pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate><guid>https://a-gucciardi.github.io/posts/empty/</guid><description/><content type="html"></content></item></channel></rss>
