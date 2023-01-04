@@ -1,0 +1,24 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Arnaud - Mon site</title><link>https://a-gucciardi.github.io/fr/posts/</link><description>Recent content in Posts on Arnaud - Mon site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 11 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://a-gucciardi.github.io/fr/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Brain Anomaly Detection</title><link>https://a-gucciardi.github.io/fr/posts/brainad/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate><guid>https://a-gucciardi.github.io/fr/posts/brainad/</guid><description>Non-AI-based Pixel-based a. Thresholding b. Clustering Edge-based An edge can be defined as a sudden change in intensity values in neighbouring pixels (in 2D). Various detection algorithms exist. Due to the shape of the brain and skull too many edges can be extracted. But what about using it after skull-stripping?
+https://kornia.readthedocs.io/en/0.5.2/filters.html#edge-detection https://github.com/kornia/kornia/issues/1181
+It works well when used after skull-stripping: done in my repo MRI-tools/code/edge-based.
+And what about 3D neighbouring pixels?</description><content type="html"><![CDATA[<h1 id="non-ai-based">Non-AI-based</h1>
+<h2 id="pixel-based">Pixel-based</h2>
+<h3 id="a-thresholding">a. Thresholding</h3>
+<h3 id="b-clustering">b. Clustering</h3>
+<h2 id="edge-based">Edge-based</h2>
+<p>An edge can be defined as a sudden change in intensity values in neighbouring pixels (in 2D). Various detection algorithms exist. Due to the shape of the brain and skull too many edges can be extracted. But what about using it after skull-stripping?</p>
+<p><a href="https://kornia.readthedocs.io/en/0.5.2/filters.html#edge-detection">https://kornia.readthedocs.io/en/0.5.2/filters.html#edge-detection</a>
+<a href="https://github.com/kornia/kornia/issues/1181">https://github.com/kornia/kornia/issues/1181</a></p>
+<p>It works well when used after skull-stripping: done in my repo MRI-tools/code/edge-based.</p>
+<!-- raw HTML omitted -->
+<p><img src="/stripping1.png" alt="Raw">
+<img src="/stripping2.png" alt="Edge gradient detection"></p>
+<p><strong>And what about 3D neighbouring pixels?</strong></p>
+<p><a href="https://docs.opencv.org/3.4/d2/d2c/tutorial_sobel_derivatives.html">https://docs.opencv.org/3.4/d2/d2c/tutorial_sobel_derivatives.html</a>
+<a href="https://pyimagesearch.com/2021/05/12/image-gradients-with-opencv-sobel-and-scharr/">https://pyimagesearch.com/2021/05/12/image-gradients-with-opencv-sobel-and-scharr/</a><br>
+<a href="https://www.codespeedy.com/find-the-gradient-of-an-image-in-python/">https://www.codespeedy.com/find-the-gradient-of-an-image-in-python/</a></p>
+<p>Tried but currently no 3d visualisation available online.</p>
+<h2 id="region-based">Region-based</h2>
+<h1 id="ai-based">AI-based</h1>
+<p>Classification problem. Anomaly / no-anomaly. Relevant ML techniques: supervised,</p>
+]]></content></item><item><title>MRI Tools</title><link>https://a-gucciardi.github.io/fr/posts/mri-tools/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate><guid>https://a-gucciardi.github.io/fr/posts/mri-tools/</guid><description>EN FRRR LES TOOLS</description><content type="html">&lt;p>EN FRRR LES TOOLS&lt;/p></content></item><item><title>Empty</title><link>https://a-gucciardi.github.io/fr/posts/empty/</link><pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate><guid>https://a-gucciardi.github.io/fr/posts/empty/</guid><description/><content type="html"></content></item></channel></rss>
