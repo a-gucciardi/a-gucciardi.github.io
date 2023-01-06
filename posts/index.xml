@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Arnaud - My site</title><link>https://a-gucciardi.github.io/posts/</link><description>Recent content in Posts on Arnaud - My site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 11 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://a-gucciardi.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Brain Anomaly Detection</title><link>https://a-gucciardi.github.io/posts/brainad/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate><guid>https://a-gucciardi.github.io/posts/brainad/</guid><description>Non-AI-based Pixel-based a. Thresholding b. Clustering Edge-based An edge can be defined as a sudden change in intensity values in neighbouring pixels (in 2D). Various detection algorithms exist. Due to the shape of the brain and skull too many edges can be extracted. But what about using it after skull-stripping?
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Arnaud - Mon site</title><link>https://a-gucciardi.github.io/posts/</link><description>Recent content in Posts on Arnaud - Mon site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 11 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://a-gucciardi.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Brain Anomaly Detection</title><link>https://a-gucciardi.github.io/posts/brainad/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate><guid>https://a-gucciardi.github.io/posts/brainad/</guid><description>Non-AI-based Pixel-based a. Thresholding b. Clustering Edge-based An edge can be defined as a sudden change in intensity values in neighbouring pixels (in 2D). Various detection algorithms exist. Due to the shape of the brain and skull too many edges can be extracted. But what about using it after skull-stripping?
 https://kornia.readthedocs.io/en/0.5.2/filters.html#edge-detection https://github.com/kornia/kornia/issues/1181
 It works well when used after skull-stripping: done in my repo MRI-tools/code/edge-based.
 And what about 3D neighbouring pixels?</description><content type="html"><![CDATA[<h1 id="non-ai-based">Non-AI-based</h1>
@@ -21,44 +21,4 @@ And what about 3D neighbouring pixels?</description><content type="html"><![CDAT
 <h2 id="region-based">Region-based</h2>
 <h1 id="ai-based">AI-based</h1>
 <p>Classification problem. Anomaly / no-anomaly. Relevant ML techniques: supervised,</p>
-]]></content></item><item><title>MRI Tools</title><link>https://a-gucciardi.github.io/posts/mri-tools/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate><guid>https://a-gucciardi.github.io/posts/mri-tools/</guid><description>For MRI images handling several tools can be used, here I will briefly list the ones I try and use.
-Tools 1 Freesurfer (w/synthstrip) Software package developed my Martinos Center in Boston. Installation. Had to do a couple of export in my .zshrc to have the command line working. Link used for synthstrip
-Commands used: mri_synthstrip -i input -o stripped mri_synthstrip -i input.nii -o stripped.nii -m mask.nii --no-csf When run on frodo: -g for GPU.</description><content type="html"><![CDATA[<p>For MRI images handling several tools can be used, here I will briefly list the ones I try and use.</p>
-<h1 id="tools">Tools</h1>
-<h2 id="1-freesurfer-wsynthstrip">1 Freesurfer (w/synthstrip)</h2>
-<p>Software package developed my Martinos Center in Boston. <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall">Installation</a>. Had to do a couple of export in my .zshrc to have the command line working.
-<a href="https://surfer.nmr.mgh.harvard.edu/docs/synthstrip/">Link used for synthstrip</a></p>
-<h3 id="commands-used">Commands used:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mri_synthstrip -i input -o stripped 
-</span></span><span style="display:flex;"><span>mri_synthstrip -i input.nii -o stripped.nii -m mask.nii --no-csf
-</span></span></code></pre></div><p>When run on frodo: -g for GPU. Check command help, short and clear.</p>
-<p>(Note: runtime increases with resolution)
-Made it work with .<em>nii</em> so far, sometimes .<em>nii.gz</em> compressed images don&rsquo;t.
-Additionally, the output file has to have the .nii(or .nii.gz) extension.</p>
-<p>Once the stripping is done thanks to the command above, one can visualize the 3D image in freesurfer. This command will open the freeview software.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>freeview <span style="color:#f92672">[</span>image_path.nii.gz<span style="color:#f92672">]</span>
-</span></span></code></pre></div><p><a href="https://surfer.nmr.mgh.harvard.edu/ftp/dist/freesurfer/synthstrip/synthstrip_data_v1.2.tar.gz">Sample dataset</a> : contains various brain images from the synthstrip of [[#Freesurfer]]</p>
-<p><strong>Exploration</strong>
-Possibilities:</p>
-<ul>
-<li>load the nii in python as a 3D array</li>
-<li>(select the chosen slice from the view)</li>
-<li>get the slice as a 2D array in python</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> nibabel <span style="color:#66d9ef">as</span> nib
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>img <span style="color:#f92672">=</span> nib<span style="color:#f92672">.</span>load(img_path)   <span style="color:#75715e">#read nii with nibabel</span>
-</span></span><span style="display:flex;"><span>img_fdata <span style="color:#f92672">=</span> img<span style="color:#f92672">.</span>get_fdata()<span style="color:#75715e">#img is 3D array</span>
-</span></span><span style="display:flex;"><span>slice <span style="color:#f92672">=</span> img_fdata[:, :, z_slice_numer]
-</span></span></code></pre></div><p>More information on the nibabel images object <a href="https://nipy.org/nibabel/nibabel_images.html">here</a>. Contains header, affine mapping matrix(?) and the array containing the image data.
-We use <em>get_fdata</em> because <a href="https://nipy.org/nibabel/images_and_memory.html">Nibabel</a> does not load the image array from the proxy when you <code>load</code> the image. It waits until you ask for the array data. The standard way to ask for the array data is to call the <code>get_fdata()</code> method.</p>
-<h3 id="other-possible-commands-from-freesurfer">Other possible commands from freesurfer:</h3>
-<p>To read: <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/SynthSR">SynthSR</a>, tool to inpaint lesions, for better segmentation/registration/etc.</p>
-<h2 id="2-itk-snap">2 Itk-Snap</h2>
-<p><a href="http://www.itksnap.org">Link</a></p>
-<h2 id="3-the-virtual-brain">3 The Virtual Brain</h2>
-<p><a href="https://www.thevirtualbrain.org/tvb/zwei/newswire-educase/single/42177-learn-the-virtual-brain-tutorial">Link</a></p>
-<h2 id="4-fsl---includes-fsleyes">4 FSL - includes FSLEyes</h2>
-<p><a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSL">FMRIB Software Library</a>
-This suite also contains commonly used pre-processing tool, cited in literature.</p>
-]]></content></item><item><title>Empty</title><link>https://a-gucciardi.github.io/posts/empty/</link><pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate><guid>https://a-gucciardi.github.io/posts/empty/</guid><description/><content type="html"></content></item></channel></rss>
+]]></content></item><item><title>MRI Tools</title><link>https://a-gucciardi.github.io/posts/mri-tools/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate><guid>https://a-gucciardi.github.io/posts/mri-tools/</guid><description>Traduction à faire</description><content type="html">&lt;p>Traduction à faire&lt;/p></content></item></channel></rss>
