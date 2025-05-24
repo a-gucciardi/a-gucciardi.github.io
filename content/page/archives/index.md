@@ -8,4 +8,5 @@ menu:
         weight: 2
         params: 
             icon: archives
+draft: true
 ---
