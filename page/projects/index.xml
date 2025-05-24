@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Arnaud Gucciardi</title><link>https://demo.stack.jimmycai.com/page/projects/</link><description>Recent content in Projects on Arnaud Gucciardi</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/page/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>PhD Thesis Projects</title><link>https://demo.stack.jimmycai.com/phd-thesis-projects/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/phd-thesis-projects/</guid><description>&lt;blockquote>
+&lt;p>[&lt;strong>Computer Vision&lt;/strong>] [&lt;strong>CNN&lt;/strong>] [&lt;strong>Transformer&lt;/strong>] [&lt;strong>3D&lt;/strong>][&lt;strong>TensorFlow&lt;/strong>] [&lt;strong>PyTorch&lt;/strong>] [&lt;strong>HF Dataset&lt;/strong>] [&lt;strong>VLM&lt;/strong>]&lt;/p>&lt;/blockquote>
+&lt;p>As part of the PARENTH2020 Consortium, my Thesis goal was to question possible applications of AI for the diagnosis or prognosis of premature born infants. After a few direction changes, my work focuses on the study of asymmetries in the newborn brain. Early detection of lesion, and asymmetrical ones in particular, would allow precision care and developmental monitoring of newborns.&lt;/p>
+&lt;p>&lt;img src="https://demo.stack.jimmycai.com/phd-thesis-projects/Figure_1.png"
+width="480"
+height="316"
+srcset="https://demo.stack.jimmycai.com/phd-thesis-projects/Figure_1_hu_8d49e4b7095f23ab.png 480w, https://demo.stack.jimmycai.com/phd-thesis-projects/Figure_1_hu_3cc3f4f79cf89987.png 1024w"
+loading="lazy"
+alt="T1w and T2w volume data I work with"
+class="gallery-image"
+data-flex-grow="151"
+data-flex-basis="364px"
+>&lt;/p>
+&lt;h2 id="research-questions-and-projects">Research Questions and Projects
+&lt;/h2>&lt;ul>
+&lt;li>Interdisciplinary research programme&lt;/li>
+&lt;li>Research on the evaluation of symmetry in the brain using Computer Vision&lt;/li>
+&lt;li>Symmetry properties and Fractal Dimension of the brain, how do they evolve ?&lt;/li>
+&lt;li>Complete Deep Learning pipeline from scan to lesion detection&lt;/li>
+&lt;li>3D Visualizer in javascript for model development and radiologists use cases&lt;/li>
+&lt;li>Exploration of MRI datasets and annotations tools&lt;/li>
+&lt;li>Fine-tuning of VLM for performance evaluation &amp;ldquo;&lt;em>VLM vs radiologist&lt;/em>&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://demo.stack.jimmycai.com/phd-thesis-projects/Figure_2.png"
+width="1329"
+height="538"
+srcset="https://demo.stack.jimmycai.com/phd-thesis-projects/Figure_2_hu_653afab001cc5f66.png 480w, https://demo.stack.jimmycai.com/phd-thesis-projects/Figure_2_hu_53522d302cbc0c42.png 1024w"
+loading="lazy"
+alt="Using selected slices with 2D Siamese CNN"
+class="gallery-image"
+data-flex-grow="247"
+data-flex-basis="592px"
+>&lt;/p>
+&lt;h2 id="my-thoughts">My Thoughts
+&lt;/h2>&lt;blockquote>
+&lt;ul>
+&lt;li>My favourite part is getting the hand of MRI datasets and using/fine-tuning CV models within an entire pipeline, while discussing these with the hospital doctors.&lt;/li>
+&lt;li>The more I tried CV models, the better the LLMs got, so my final chapter will concern the implementation of LLMs for clinical decision support.&lt;/li>
+&lt;li>Working in applied research to improve clinical care is a plus I love !&lt;/li>
+&lt;/ul>&lt;/blockquote></description></item><item><title>Super-Resolution for thermal images on TPU/GPU</title><link>https://demo.stack.jimmycai.com/super-resolution-for-thermal-images-on-tpu/gpu/</link><pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/super-resolution-for-thermal-images-on-tpu/gpu/</guid><description>&lt;blockquote>
+&lt;p>[&lt;strong>GAN&lt;/strong>] &lt;strong>[Software Development]&lt;/strong> &lt;strong>[Thermal Images]&lt;/strong> &lt;strong>[PyTorch]&lt;/strong>&lt;/p>&lt;/blockquote>
+&lt;p>In this project, with partners from &lt;code>SUPSI&lt;/code> and &lt;code>Next2U Solutions&lt;/code>, I am responsible for the development of an embedded super-resolution module.
+The solution is a customized and reduced-size GAN, to be executable on a Jetson Nano.&lt;/p>
+&lt;p>The idea of the project is to revolutionize the application of affective computing, being able to bring under a single and miniaturized, sensing module all the power of the Facial Expression Analysis, of the most advanced non-contact psychophysiology, and of specifically developed intelligence machinery able to learn from the memory of previous experiences and affective states.&lt;/p>
+&lt;h2 id="highlights">Highlights
+&lt;/h2>&lt;ul>
+&lt;li>Tests on GPU v CPU v TPU, code flexibility for quick benchmarks.&lt;/li>
+&lt;li>Reached 25 fps output for resolution from 120x160 to 240x320.&lt;/li>
+&lt;li>Collects the binary frames from the camera and outputs frames for the following model of landmark detection.&lt;/li>
+&lt;li>Final evaluation on the effective improvement of the SR model for the landmarks detections.&lt;/li>
+&lt;/ul>
+&lt;p>The table summarizes the FPS output obtained with different versions and setup :&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>Version&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>GPU&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>CPU&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>TPU&lt;/strong>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>V0&lt;/td>
+&lt;td>168&lt;/td>
+&lt;td>108&lt;/td>
+&lt;td>15&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>V1&lt;/td>
+&lt;td>171&lt;/td>
+&lt;td>115&lt;/td>
+&lt;td>18&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>V2&lt;/td>
+&lt;td>175&lt;/td>
+&lt;td>129&lt;/td>
+&lt;td>25&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>(The implementation code is currently under NDA)&lt;/p>
+&lt;p>&lt;img src="https://demo.stack.jimmycai.com/super-resolution-for-thermal-images-on-tpu/gpu/hira.png"
+width="2546"
+height="1122"
+srcset="https://demo.stack.jimmycai.com/super-resolution-for-thermal-images-on-tpu/gpu/hira_hu_f66e047afc8fb7f1.png 480w, https://demo.stack.jimmycai.com/super-resolution-for-thermal-images-on-tpu/gpu/hira_hu_21a2a5f7539fc362.png 1024w"
+loading="lazy"
+alt="Representative samples A: 120x160 input, B: 240x320 upscaled, C: 240x320 ground truth"
+class="gallery-image"
+data-flex-grow="226"
+data-flex-basis="544px"
+>&lt;/p>
+&lt;h2 id="my-thoughts">My Thoughts
+&lt;/h2>&lt;blockquote>
+&lt;ul>
+&lt;li>Improvements from V0-2 came from changes in the frame by frame processing and threading.&lt;/li>
+&lt;li>Concrete implementation of ML into software development, challenging fun!&lt;/li>
+&lt;/ul>&lt;/blockquote></description></item><item><title>Self-rewarding LLM, LoRA and a few VLMs</title><link>https://demo.stack.jimmycai.com/self-rewarding-llm-lora-and-a-few-vlms/</link><pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/self-rewarding-llm-lora-and-a-few-vlms/</guid><description>&lt;!-- ## Tech -->
+&lt;blockquote>
+&lt;p>[&lt;strong>LLM Fine-Tuning&lt;/strong>] &lt;strong>[LoRA]&lt;/strong> &lt;strong>[Diffusion]&lt;/strong> &lt;strong>[Self-Supervised]&lt;/strong> &lt;strong>[SelfRewarding]&lt;/strong> &lt;strong>[PyTorch]&lt;/strong> &lt;strong>[HuggingFace]&lt;/strong>&lt;/p>&lt;/blockquote>
+&lt;h2 id="highlights">Highlights
+&lt;/h2>&lt;ul>
+&lt;li>
+&lt;p>Fine-tuned Stable Diffusion using a self-generated, self-evaluated dataset.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Incorporated LLM with automated reward modeling and prompt-following accuracy.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Achieved a 60% performance improvement after training over the base text-to-image models.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Enabled fully automated training loops, reducing the need for manual annotations.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="ideas">Ideas
+&lt;/h2>&lt;!-- By guiding LLMs to self-assess and follow their own learning process, we tried to see how models do beyond reliance on human feedback.
+Our contribution builds on the LoRA concept and expands it to the text-to-image (diffusion) models. -->
+&lt;p>This project sits at the intersection of LLM fine-tuning, multi-modal AI, and automated self-supervision.&lt;br>
+We showcase a pipeline of scalable AI systems that learn and improve independently.&lt;/p>
+&lt;p>The core idea? We developed and fine-tuned a self-rewarding system for generative models to automatically curate and score their own training data. Using a combination of object detection, image captioning, and language model judgment, the model learns to evaluate its outputs and iteratively improve based on its own assessments.
+This significantly streamlines the training process and enhances data quality, enabling highly targeted and user-specific improvements in image generation.&lt;/p>
+&lt;p>&lt;img src="https://demo.stack.jimmycai.com/self-rewarding-llm-lora-and-a-few-vlms/lora.png"
+width="2880"
+height="1619"
+srcset="https://demo.stack.jimmycai.com/self-rewarding-llm-lora-and-a-few-vlms/lora_hu_74a9704808cd884c.png 480w, https://demo.stack.jimmycai.com/self-rewarding-llm-lora-and-a-few-vlms/lora_hu_2d2209511bbf50b.png 1024w"
+loading="lazy"
+alt="Some fun and insights with LoRA levels"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;h2 id="my-thoughts">My Thoughts
+&lt;/h2>&lt;blockquote>
+&lt;ul>
+&lt;li>It was a lot of fun to retrain text to image models and prompts, and see some models evaluate some other models.&lt;/li>
+&lt;li>Potentially replaces Reinforcement Learning with Human Feedback, &lt;strong>if&lt;/strong> we reach the point where we trust the LLM/VLM for evaluation. (will we ever? )&lt;/li>
+&lt;li>The idea of the pipeline stills stands and is something I would love to get back to with new models
+&lt;strong>Prompts -&amp;gt; Text-to-Image -&amp;gt; Self-Eval + Filtering -&amp;gt; Fine-tuning&lt;/strong>&lt;/li>
+&lt;/ul>&lt;/blockquote></description></item><item><title>Siamese networks for brain hemispheres - PhD part</title><link>https://demo.stack.jimmycai.com/siamese-networks-for-brain-hemispheres-phd-part/</link><pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/siamese-networks-for-brain-hemispheres-phd-part/</guid><description>&lt;blockquote>
+&lt;p>[&lt;strong>Computer Vision&lt;/strong>] [&lt;strong>CNN&lt;/strong>] [&lt;strong>PyTorch&lt;/strong>] [&lt;strong>HF Dataset&lt;/strong>]&lt;/p>&lt;/blockquote>
+&lt;h2 id="highlights">Highlights
+&lt;/h2>&lt;ul>
+&lt;li>Used an open MRI source to create and annotate my own &lt;a class="link" href="https://huggingface.co/datasets/agucci/mri-sym2" target="_blank" rel="noopener"
+>2D dataset&lt;/a> + tested simulated tumors.&lt;/li>
+&lt;li>Compared 5 Siamese network backbones (ResNet, ResNeXt, MobileNet, VGG, EfficientNet) for symmetry analysis in neonatal brain MRIs.&lt;/li>
+&lt;li>VGG-based networks outperformed others faster, achieving up to 99% detection accuracy for larger asymmetries and demonstrating strong generalization.&lt;/li>
+&lt;li>Networks showed variable sensitivity based on asymmetry size; models trained on medium-sized asymmetries generalized best across different scales.&lt;/li>
+&lt;li>Groundwork for automated early detection of developmental abnormalities, with on-going similar project but using 3D model directly.&lt;/li>
+&lt;/ul>
+&lt;h2 id="ideas">Ideas
+&lt;/h2>&lt;p>The aim was to evaluate specific CNN architectures to detect brain abnormalities in newborns, analyzing how symmetrical (or not) their brain images are. The &lt;em>Siamese neural network&lt;/em>, compares the left and right sides of the brain to spot differences. A new dataset had to be created and curated for the project.
+By adding fake but controlled asymmetries (small differences) to brain images, we used healthy datasets. Helping the models generalize.&lt;/p>
+&lt;p>&lt;img src="https://demo.stack.jimmycai.com/siamese-networks-for-brain-hemispheres-phd-part/Figure_4.png"
+width="2267"
+height="1111"
+srcset="https://demo.stack.jimmycai.com/siamese-networks-for-brain-hemispheres-phd-part/Figure_4_hu_31243d654638498a.png 480w, https://demo.stack.jimmycai.com/siamese-networks-for-brain-hemispheres-phd-part/Figure_4_hu_e4e31bffc9feac5e.png 1024w"
+loading="lazy"
+alt="Summary of the Siamese Network &amp;#43; noise pipeline"
+class="gallery-image"
+data-flex-grow="204"
+data-flex-basis="489px"
+>&lt;/p>
+&lt;h2 id="my-thoughts">My Thoughts
+&lt;/h2>&lt;blockquote>
+&lt;ul>
+&lt;li>Had a lot of fun with the PyTorch loops and controlled noise creation!&lt;/li>
+&lt;li>While not ground-breaking, this proved useful to understand which models and what are (were) the limitations from a Computer Science perspective.&lt;/li>
+&lt;li>Excited to see the results of the 3D version (writing/testing phase).&lt;/li>
+&lt;/ul>&lt;/blockquote></description></item><item><title>3D Brain WebApp - PhD part</title><link>https://demo.stack.jimmycai.com/3d-brain-webapp-phd-part/</link><pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/3d-brain-webapp-phd-part/</guid><description>&lt;p>In this project, I explored the visualization of volumetric brain data. A custom light-weight tool that lets users efficiently view and interact with clinical volumetric files, providing insights into complex 3D structures through various perspectives and useful functionalities.&lt;/p>
+&lt;h2 id="highlights">Highlights
+&lt;/h2>&lt;ul>
+&lt;li>3D Volume Visualization: visualization of volumetric data in a three-dimensional space, for a quick and comprehensive view of the data.&lt;/li>
+&lt;li>Plane navigation, like in the standard brain viewer.&lt;/li>
+&lt;li>Annotation Rendering: read custom annotations from external files and integrate them into the volumes.&lt;/li>
+&lt;li>Flexibility of the views and renders, with direct discussion with clinicians.&lt;/li>
+&lt;/ul>
+&lt;h2 id="ideas">Ideas
+&lt;/h2>&lt;p>See brain file and play with it.&lt;br>
+Or, visualize brain annotations and detected anomalies from the models.&lt;br>
+Keep it simple !&lt;/p>
+&lt;p>&lt;img src="https://demo.stack.jimmycai.com/3d-brain-webapp-phd-part/vol.png"
+width="3936"
+height="2262"
+srcset="https://demo.stack.jimmycai.com/3d-brain-webapp-phd-part/vol_hu_e61903750da590b3.png 480w, https://demo.stack.jimmycai.com/3d-brain-webapp-phd-part/vol_hu_c504de11c91059d5.png 1024w"
+loading="lazy"
+alt="First early version 3D &amp;#43; slice view"
+class="gallery-image"
+data-flex-grow="174"
+data-flex-basis="417px"
+> &lt;img src="https://demo.stack.jimmycai.com/3d-brain-webapp-phd-part/view.png"
+width="958"
+height="852"
+srcset="https://demo.stack.jimmycai.com/3d-brain-webapp-phd-part/view_hu_f2d1c2029f22ca47.png 480w, https://demo.stack.jimmycai.com/3d-brain-webapp-phd-part/view_hu_dbb05fc64562ffc6.png 1024w"
+loading="lazy"
+alt="Some recent render improvements"
+class="gallery-image"
+data-flex-grow="112"
+data-flex-basis="269px"
+>&lt;/p>
+&lt;h2 id="my-thoughts">My Thoughts
+&lt;/h2>&lt;blockquote>
+&lt;ul>
+&lt;li>More than a deliverable, I used the tool during all my experiments with MRI dataset.&lt;/li>
+&lt;li>Fun with Javascript! Keeps improving over time as I use &lt;a class="link" href="https://threejs.org/" target="_blank" rel="noopener"
+>Three.js&lt;/a> better&lt;/li>
+&lt;/ul>&lt;/blockquote></description></item><item><title>Satellite Object Detection Benchmark</title><link>https://demo.stack.jimmycai.com/satellite-object-detection-benchmark/</link><pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/satellite-object-detection-benchmark/</guid><description>&lt;p>[&lt;strong>Computer Vision&lt;/strong>] [&lt;strong>Object Detection&lt;/strong>] [&lt;strong>PyTorch&lt;/strong>] [&lt;strong>TensorFlow&lt;/strong>]&lt;/p>
+&lt;p>This study compared multiple deep learning algorithms, including &lt;code>Faster RCNN&lt;/code>, &lt;code>DETR&lt;/code>, &lt;code>SSD&lt;/code>, &lt;code>RTMdet&lt;/code>, &lt;code>RetinaNet&lt;/code>, &lt;code>CenterNet&lt;/code>, &lt;code>YOLOv5&lt;/code>, and &lt;code>YOLOv8&lt;/code>, trained and evaluated on aerial images for the detection and localization of aircrafts.&lt;/p>
+&lt;h2 id="highlights">Highlights
+&lt;/h2>&lt;ul>
+&lt;li>Due to the fine-tuning, newer is not always better, Yolov5 came out on top.&lt;/li>
+&lt;li>Deep dive in satellite imaging world, a lot of images and datasets, and a lot of models applicable.&lt;/li>
+&lt;li>Ensemble or voting methods are important when not missing out detections is important.&lt;/li>
+&lt;/ul>
+&lt;p>The graphical summary of the work is presented if the following figure :
+&lt;img src="https://demo.stack.jimmycai.com/satellite-object-detection-benchmark/flight.png"
+width="842"
+height="796"
+srcset="https://demo.stack.jimmycai.com/satellite-object-detection-benchmark/flight_hu_4261775f678fef67.png 480w, https://demo.stack.jimmycai.com/satellite-object-detection-benchmark/flight_hu_e71bed387021842.png 1024w"
+loading="lazy"
+alt="Some results of the benchmarking"
+class="gallery-image"
+data-flex-grow="105"
+data-flex-basis="253px"
+>&lt;/p>
+&lt;h2 id="my-thoughts">My Thoughts
+&lt;/h2>&lt;blockquote>
+&lt;ul>
+&lt;li>Object Detection is rapidly evolving, we are not at yolov12 and this was done with yolov8 as the best SOTA.&lt;/li>
+&lt;li>This was done in collaboration with Switzerland defense agencies, really cool to be able to use our expertise!&lt;/li>
+&lt;li>So much more to do with satellites images, segmentations, classifications, and now combined with VLMs it only gets better.&lt;/li>
+&lt;/ul>&lt;/blockquote></description></item><item><title>Fractal dimension calculations - PhD part</title><link>https://demo.stack.jimmycai.com/fractal-dimension-calculations-phd-part/</link><pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/fractal-dimension-calculations-phd-part/</guid><description>&lt;blockquote>
+&lt;p>[&lt;strong>3D Brain MRI&lt;/strong>] [&lt;strong>Fractal Dimension&lt;/strong>] [&lt;strong>Developmental Curves&lt;/strong>] [&lt;strong>3D Segmentation Models&lt;/strong>] [&lt;strong>PyTorch&lt;/strong>]&lt;/p>&lt;/blockquote>
+&lt;p>This study in development aims to analyze the fractal dimension (FD) of various brain regions in children to understand how these dimensions change with age, establishing developmental trajectories for typical brain maturation.
+Findings could help in the early detection of developmental abnormalities.&lt;/p>
+&lt;h2 id="highlights-and-ideas">Highlights and Ideas
+&lt;/h2>&lt;ul>
+&lt;li>Combination of models after MRI registration. Skull stripping + segmentation models accuracies impact on fractal dimension is assessed.&lt;/li>
+&lt;li>Considering that the box-counting method is the most widely used, what constitutes the optimal range of box sizes for estimating the fractal dimension?&lt;/li>
+&lt;li>Do different datasets necessitate distinct developmental curves, or is it possible to develop generalisable models?&lt;/li>
+&lt;li>Comparison of using different 3D segmentation models for the brain parts extraction vs training/fine-tuning models.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://demo.stack.jimmycai.com/fractal-dimension-calculations-phd-part/fd.png"
+width="882"
+height="532"
+srcset="https://demo.stack.jimmycai.com/fractal-dimension-calculations-phd-part/fd_hu_8ffb3652ffb27d9b.png 480w, https://demo.stack.jimmycai.com/fractal-dimension-calculations-phd-part/fd_hu_883982ae67829111.png 1024w"
+loading="lazy"
+alt="Some preliminary results of subparts FD calculation differences (after segmentation)"
+class="gallery-image"
+data-flex-grow="165"
+data-flex-basis="397px"
+>&lt;/p>
+&lt;h2 id="my-thoughts">My Thoughts
+&lt;/h2>&lt;blockquote>
+&lt;ul>
+&lt;li>The focus on brain development from the newborn stage using fractal analysis is genuinely cool and not broadly explored yet.&lt;/li>
+&lt;li>The plan to assess the impact of segmentation accuracy is crucial for results evaluation and I enjoy making different types of models work.&lt;/li>
+&lt;li>Cool visualisations with the developmental curves are expected.&lt;/li>
+&lt;/ul>&lt;/blockquote></description></item><item><title>Vineyards - ML Applications and AI agents</title><link>https://demo.stack.jimmycai.com/vineyards-ml-applications-and-ai-agents/</link><pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/vineyards-ml-applications-and-ai-agents/</guid><description>&lt;p>TBD&lt;/p></description></item><item><title>Olive Oil Spectrometry - ML applications</title><link>https://demo.stack.jimmycai.com/olive-oil-spectrometry-ml-applications/</link><pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/olive-oil-spectrometry-ml-applications/</guid><description>&lt;p>TBD&lt;/p></description></item></channel></rss>

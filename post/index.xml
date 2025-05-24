@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Arnaud Gucciardi</title><link>https://demo.stack.jimmycai.com/post/</link><description>Recent content in Posts on Arnaud Gucciardi</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 24 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Siamese Networks in medical imagery CNN-based comparative study for brain symmetry scoring</title><link>https://demo.stack.jimmycai.com/p/siamese-networks-in-medical-imagery-cnn-based-comparative-study-for-brain-symmetry-scoring/</link><pubDate>Fri, 24 Jan 2025 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/p/siamese-networks-in-medical-imagery-cnn-based-comparative-study-for-brain-symmetry-scoring/</guid><description>&lt;img src="https://demo.stack.jimmycai.com/p/siamese-networks-in-medical-imagery-cnn-based-comparative-study-for-brain-symmetry-scoring/brain.png" alt="Featured image of post Siamese Networks in medical imagery CNN-based comparative study for brain symmetry scoring" />&lt;p>&lt;strong>PhD Thesis paper.&lt;/strong>&lt;br>
+&lt;strong>Responsible for the Data annotation/preparation - Code (PyTorch) - Writing - Figures&lt;/strong>&lt;/p>
+&lt;H1>Automated Neonatal MRI Symmetry Analysis with Siamese CNNs&lt;/H1>
+&lt;p>Early detection of developmental abnormalities in the neonatal brain is crucial for timely diagnosis and intervention. However, analyzing symmetry in neonatal brain MRIs remains a challenging task due to the unique imaging characteristics of newborns—such as smaller brain size, rapid developmental changes, and lower tissue contrast. While deep learning has revolutionized medical imaging, existing models often struggle to effectively handle these specific challenges in neonatal scans.&lt;/p>
+&lt;p>In this research, we systematically evaluate the performance of Siamese neural networks for automated symmetry analysis in neonatal brain MRIs. Siamese networks are particularly well-suited for tasks involving pairwise comparisons, making them ideal for detecting subtle hemispheric asymmetries.&lt;/p>
+&lt;H2>Benchmarking State-of-the-Art Architectures&lt;/H2>
+We compared five prominent deep learning backbone architectures integrated into the Siamese network framework:
+* ResNet
+* ResNeXt
+* MobileNet
+* EfficientNet
+* VGG
+&lt;H3>Labelling &amp; simulations&lt;/H3>
+To rigorously evaluate these models, we curated a novel dataset comprising 3,150 annotated axial brain views of neonates. We then introduced controlled asymmetry simulations into the images, ranging in size from 1 mm² to 20 mm², enabling us to benchmark detection capabilities at varying levels of difficulty.
+&lt;H3>Training Protocol: Progressive Asymmetry Simulation&lt;/H3>
+A key innovation in our study is a progressive training protocol. Rather than exposing the models to large asymmetries from the start, we gradually increase the simulated asymmetry during training. This approach mirrors a curriculum learning strategy, helping the networks adapt more effectively and improving their ability to detect subtle abnormalities.
+&lt;H3>Key Findings&lt;/H3>
+Our experiments yielded several important insights:
+&lt;ul>
+&lt;li>
+&lt;p>VGG-based Siamese architectures outperformed all other models across most asymmetry levels.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Detection accuracy increased with asymmetry size, reaching:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>76% accuracy for 7 mm² asymmetries&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>99% accuracy for asymmetries larger than 13.5 mm²&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Interestingly, models trained on medium-range asymmetries (e.g., 7–13 mm²) showed better generalization to both smaller and larger asymmetries, highlighting the importance of balanced training data.&lt;/p>
+&lt;H3>Contributions to Neonatal Neuroimaging&lt;/H3>
+This research offers both practical and theoretical contributions to the field:
+&lt;ul>
+&lt;li>A publicly available, annotated dataset for neonatal symmetry analysis&lt;/li>
+&lt;li>A comparative benchmark of deep learning architectures tailored to neonatal imaging&lt;/li>
+&lt;li>A training methodology that enhances detection performance through progressive learning&lt;/li>
+&lt;/ul>
+&lt;p>By addressing a critical gap in neonatal MRI analysis, our work supports the development of more sensitive, robust, and clinically viable diagnostic tools. With continued refinement, automated symmetry analysis could play a vital role in early detection of neurodevelopmental disorders, ultimately improving outcomes for at-risk infants.&lt;/p></description></item><item><title>A large-scale dataset of MRI images for neonatal brain symmetry analysis</title><link>https://demo.stack.jimmycai.com/p/a-large-scale-dataset-of-mri-images-for-neonatal-brain-symmetry-analysis/</link><pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/p/a-large-scale-dataset-of-mri-images-for-neonatal-brain-symmetry-analysis/</guid><description>&lt;img src="https://demo.stack.jimmycai.com/p/a-large-scale-dataset-of-mri-images-for-neonatal-brain-symmetry-analysis/brain.png" alt="Featured image of post A large-scale dataset of MRI images for neonatal brain symmetry analysis" />&lt;p>&lt;strong>Responsible for the Data processing - Annotations - Code - Writing - Figures - Presentations&lt;/strong>&lt;/p>
+&lt;!-- Symbrain: A large-scale dataset of MRI images for neonatal brain symmetry analysis. 2024.
+A Gucciardi, SE Ghazouali, F Venturini, V Groznik, U Michelucci
+Class-Conditional self-reward mechanism for improved Text-to-Image models. 2024.
+SE Ghazouali, A Gucciardi, U Michelucci.
+Dataset of fluorescence spectra and chemical parameters of olive oils. 2023.
+F Venturini, M Sperti, U Michelucci, A Gucciardi, VM Martos, MA Deriu.
+A Median Filter Approach to Deal with Large Windows of Missing Data in Eye-gaze Measurements. Horizon2020 conference, 2022.
+A Gucciardi, M Crotti, N Ben Itzhak, L Mailleux, E Ortibus, U Michelucci, V Groznik, A Sadikov.
+Physico-chemical properties extraction from the fluorescence spectrum with 1d-convolutional neural networks: application to olive oil. 2022.
+F Venturini, M Sperti, U Michelucci, A Gucciardi, VM Martose, MA Deriu. --></description></item><item><title>Class-Conditional self-reward mechanism for improved Text-to-Image models</title><link>https://demo.stack.jimmycai.com/p/class-conditional-self-reward-mechanism-for-improved-text-to-image-models/</link><pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/p/class-conditional-self-reward-mechanism-for-improved-text-to-image-models/</guid><description>&lt;img src="https://demo.stack.jimmycai.com/p/class-conditional-self-reward-mechanism-for-improved-text-to-image-models/self.png" alt="Featured image of post Class-Conditional self-reward mechanism for improved Text-to-Image models" />&lt;p>&lt;strong>Responsible for the Data processing - Code (PyTorch / Transformers) - Writing - Figures - Presentations&lt;/strong>&lt;/p>
+&lt;!-- Symbrain: A large-scale dataset of MRI images for neonatal brain symmetry analysis. 2024.
+A Gucciardi, SE Ghazouali, F Venturini, V Groznik, U Michelucci
+Class-Conditional self-reward mechanism for improved Text-to-Image models. 2024.
+SE Ghazouali, A Gucciardi, U Michelucci.
+Dataset of fluorescence spectra and chemical parameters of olive oils. 2023.
+F Venturini, M Sperti, U Michelucci, A Gucciardi, VM Martos, MA Deriu.
+A Median Filter Approach to Deal with Large Windows of Missing Data in Eye-gaze Measurements. Horizon2020 conference, 2022.
+A Gucciardi, M Crotti, N Ben Itzhak, L Mailleux, E Ortibus, U Michelucci, V Groznik, A Sadikov.
+Physico-chemical properties extraction from the fluorescence spectrum with 1d-convolutional neural networks: application to olive oil. 2022.
+F Venturini, M Sperti, U Michelucci, A Gucciardi, VM Martose, MA Deriu. --></description></item><item><title>FlightScope An Experimental Comparative Review of Aircraft Detection Algorithms in Satellite Imagery</title><link>https://demo.stack.jimmycai.com/p/flightscope-an-experimental-comparative-review-of-aircraft-detection-algorithms-in-satellite-imagery/</link><pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/p/flightscope-an-experimental-comparative-review-of-aircraft-detection-algorithms-in-satellite-imagery/</guid><description>&lt;img src="https://demo.stack.jimmycai.com/p/flightscope-an-experimental-comparative-review-of-aircraft-detection-algorithms-in-satellite-imagery/planes.jpg" alt="Featured image of post FlightScope An Experimental Comparative Review of Aircraft Detection Algorithms in Satellite Imagery" />&lt;p>&lt;strong>Responsible for the Data formatting - Object Detection models code - Writing - Figures&lt;/strong>&lt;/p>
+&lt;!-- &lt;H1>What Works Best for Identifying Aircraft in Satellite Imagery? (in 2024)&lt;/H1>
+Object detection in satellite imagery plays a crucial role across a range of applications—from environmental monitoring to biophysical analysis. Yet, while deep learning has made tremendous strides in ground-based image analysis, its adaptation to the unique challenges of remote sensing remains underexplored.
+In our latest study, we present a comprehensive evaluation of state-of-the-art object detection algorithms, specifically tailored to the task of identifying aircraft in satellite images. Unlike conventional object detection research that focuses on everyday, ground-level scenes, this work pushes the boundary by diving into the complex visual characteristics of high-resolution aerial imagery.
+A Rigorous Comparative Study
+Leveraging the extensive HRPlanesV2 dataset and validating our findings on the trusted GDIT dataset, we conduct a deep comparative analysis of several cutting-edge object detection models:
+YOLOv5
+YOLOv8
+Faster R-CNN
+CenterNet
+RetinaNet
+RTMDet
+DETR
+Each model is trained from scratch to ensure a level playing field, allowing for an unbiased assessment of their true capabilities in aerial object detection tasks.
+YOLOv5 Emerges as the Top Performer
+After exhaustive training and cross-dataset validation, YOLOv5 consistently outperformed its counterparts in detecting airplanes from satellite imagery. Its standout performance includes:
+Superior mean Average Precision (mAP)
+Higher Recall rates
+Stronger Intersection over Union (IoU) scores
+Robust generalization across varying lighting and atmospheric conditions
+These results position YOLOv5 as a highly precise and adaptable solution for remote sensing applications.
+Key Insights and Contributions
+This research sheds light on the subtle performance differences across object detection algorithms when applied to satellite data. While many models excel in ground-based benchmarks, their effectiveness does not always translate to the remote sensing domain without significant adaptation.
+Our contributions include:
+A benchmark framework and reproducible toolkit, publicly available on GitHub: FlightScope_Bench
+An in-depth performance landscape analysis across multiple models and datasets
+A clear demonstration of the importance of algorithm selection tailored to the complexities of satellite imagery
+Toward Smarter Satellite Image Analysis
+As the demand for automated analysis of aerial and satellite data continues to grow, this work provides a practical guide for researchers and engineers developing intelligent remote sensing systems. By identifying the most effective object detection approaches and offering a transparent benchmarking methodology, we aim to support future innovation in this rapidly evolving field.
+--></description></item><item><title>Machine learning feature extraction for predicting the ageing of olive oil</title><link>https://demo.stack.jimmycai.com/p/machine-learning-feature-extraction-for-predicting-the-ageing-of-olive-oil/</link><pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/p/machine-learning-feature-extraction-for-predicting-the-ageing-of-olive-oil/</guid><description>&lt;img src="https://demo.stack.jimmycai.com/p/machine-learning-feature-extraction-for-predicting-the-ageing-of-olive-oil/oil.jpg" alt="Featured image of post Machine learning feature extraction for predicting the ageing of olive oil" />&lt;p>&lt;strong>Responsible for the Data processing - Code (TensorFlow) - Writing - Figures - Presentations&lt;/strong>&lt;/p>
+&lt;!-- Machine learning feature extraction for predicting the ageing of olive oil.
+Data Science for Photonics and Biophotonics, 2024.
+A Gucciardi, S El Ghazouali, U Michelucci, F Venturini.
+Understanding the learning mechanism of convolutional neural networks applied to fluorescence spectra. AI and Optical Data Sciences IV, 2023.
+F Venturini, U Michelucci, M Sperti, A Gucciardi, MA Deriu.
+One-dimensional convolutional neural networks design for fluorescence spectroscopy with prior knowledge: explainability techniques applied to olive oil fluorescence spectra.
+Optical Sensing and Detection VII, 2022.
+F Venturini, U Michelucci, M Sperti, A Gucciardi, MA Deriu.
+Chemical analysis of olive oils from fluorescence spectra thanks to one-dimensional convolutional neural networks. Optical Sensing and Detection VII, 2022.
+M Sperti, A Gucciardi, U Michelucci, F Venturini, MA Deriu.
+Compact optical fluorescence sensor for food quality control using artificial neural networks: application to olive oil. Optical Sensing and Detection VII, 2022.
+A. Gucciardi, U Michelucci, F Venturini, M Sperti, MA Deriu. --></description></item><item><title>Neurodevelopmental impairments prediction in premature infants based on clinical data and machine learning techniques</title><link>https://demo.stack.jimmycai.com/p/neurodevelopmental-impairments-prediction-in-premature-infants-based-on-clinical-data-and-machine-learning-techniques/</link><pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/p/neurodevelopmental-impairments-prediction-in-premature-infants-based-on-clinical-data-and-machine-learning-techniques/</guid><description>&lt;img src="https://demo.stack.jimmycai.com/p/neurodevelopmental-impairments-prediction-in-premature-infants-based-on-clinical-data-and-machine-learning-techniques/brain.png" alt="Featured image of post Neurodevelopmental impairments prediction in premature infants based on clinical data and machine learning techniques" />&lt;p>&lt;strong>Responsible for the Code review - Data pre-processing - Reviewing&lt;/strong>&lt;/p>
+&lt;!-- FlightScope: An Experimental Comparative Review of Aircraft Detection Algorithms in Satellite Imagery. Remote Sensing, 2024.
+S El Ghazouali, A Gucciardi, F Venturini, N Venturi, M Rueegsegger, U Michelucci. -->
+&lt;!-- Neurodevelopmental impairments prediction in premature infants based on clinical data and machine learning techniques. Stats, 2024.
+A Ortega-Leon, A Gucciardi, A Segado-Arenas, I Benavente-Fernández, D Urda, IJ Turias.
+Extraction of physicochemical properties from the fluorescence spectrum with 1D convolutional neural networks: Application to olive oil. Journal of Food Engineering, 2022.
+F Venturini, M Sperti, U Michelucci, A Gucciardi, VM Martos, MA Deriu. --></description></item><item><title>Dataset of fluorescence spectra and chemical parameters of olive oils</title><link>https://demo.stack.jimmycai.com/p/dataset-of-fluorescence-spectra-and-chemical-parameters-of-olive-oils/</link><pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/p/dataset-of-fluorescence-spectra-and-chemical-parameters-of-olive-oils/</guid><description>&lt;img src="https://demo.stack.jimmycai.com/p/dataset-of-fluorescence-spectra-and-chemical-parameters-of-olive-oils/oil.jpg" alt="Featured image of post Dataset of fluorescence spectra and chemical parameters of olive oils" />&lt;p>&lt;strong>Responsible for the Data processing - Code (TensorFlow) - Writing - Figures - Presentations&lt;/strong>&lt;/p>
+&lt;!-- Symbrain: A large-scale dataset of MRI images for neonatal brain symmetry analysis. 2024.
+A Gucciardi, SE Ghazouali, F Venturini, V Groznik, U Michelucci
+Class-Conditional self-reward mechanism for improved Text-to-Image models. 2024.
+SE Ghazouali, A Gucciardi, U Michelucci.
+Dataset of fluorescence spectra and chemical parameters of olive oils. 2023.
+F Venturini, M Sperti, U Michelucci, A Gucciardi, VM Martos, MA Deriu.
+A Median Filter Approach to Deal with Large Windows of Missing Data in Eye-gaze Measurements. Horizon2020 conference, 2022.
+A Gucciardi, M Crotti, N Ben Itzhak, L Mailleux, E Ortibus, U Michelucci, V Groznik, A Sadikov.
+Physico-chemical properties extraction from the fluorescence spectrum with 1d-convolutional neural networks: application to olive oil. 2022.
+F Venturini, M Sperti, U Michelucci, A Gucciardi, VM Martose, MA Deriu. --></description></item><item><title>Understanding the learning mechanism of convolutional neural networks applied to fluorescence spectra</title><link>https://demo.stack.jimmycai.com/p/understanding-the-learning-mechanism-of-convolutional-neural-networks-applied-to-fluorescence-spectra/</link><pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/p/understanding-the-learning-mechanism-of-convolutional-neural-networks-applied-to-fluorescence-spectra/</guid><description>&lt;img src="https://demo.stack.jimmycai.com/p/understanding-the-learning-mechanism-of-convolutional-neural-networks-applied-to-fluorescence-spectra/oil.jpg" alt="Featured image of post Understanding the learning mechanism of convolutional neural networks applied to fluorescence spectra" />&lt;p>&lt;strong>Responsible for the Data processing - Code (TensorFlow) - Writing - Figures - Presentations&lt;/strong>&lt;/p>
+&lt;!-- Machine learning feature extraction for predicting the ageing of olive oil.
+Data Science for Photonics and Biophotonics, 2024.
+A Gucciardi, S El Ghazouali, U Michelucci, F Venturini.
+Understanding the learning mechanism of convolutional neural networks applied to fluorescence spectra. AI and Optical Data Sciences IV, 2023.
+F Venturini, U Michelucci, M Sperti, A Gucciardi, MA Deriu.
+One-dimensional convolutional neural networks design for fluorescence spectroscopy with prior knowledge: explainability techniques applied to olive oil fluorescence spectra.
+Optical Sensing and Detection VII, 2022.
+F Venturini, U Michelucci, M Sperti, A Gucciardi, MA Deriu.
+Chemical analysis of olive oils from fluorescence spectra thanks to one-dimensional convolutional neural networks. Optical Sensing and Detection VII, 2022.
+M Sperti, A Gucciardi, U Michelucci, F Venturini, MA Deriu.
+Compact optical fluorescence sensor for food quality control using artificial neural networks: application to olive oil. Optical Sensing and Detection VII, 2022.
+A. Gucciardi, U Michelucci, F Venturini, M Sperti, MA Deriu. --></description></item><item><title>A Median Filter Approach to Deal with Large Windows of Missing Data in Eye-gaze Measurements</title><link>https://demo.stack.jimmycai.com/p/a-median-filter-approach-to-deal-with-large-windows-of-missing-data-in-eye-gaze-measurements/</link><pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/p/a-median-filter-approach-to-deal-with-large-windows-of-missing-data-in-eye-gaze-measurements/</guid><description>&lt;img src="https://demo.stack.jimmycai.com/p/a-median-filter-approach-to-deal-with-large-windows-of-missing-data-in-eye-gaze-measurements/median.png" alt="Featured image of post A Median Filter Approach to Deal with Large Windows of Missing Data in Eye-gaze Measurements" />&lt;p>&lt;strong>Responsible for the Data processing - Annotations - Code - Writing - Figures - Presentations&lt;/strong>&lt;/p>
+&lt;!-- Symbrain: A large-scale dataset of MRI images for neonatal brain symmetry analysis. 2024.
+A Gucciardi, SE Ghazouali, F Venturini, V Groznik, U Michelucci
+Class-Conditional self-reward mechanism for improved Text-to-Image models. 2024.
+SE Ghazouali, A Gucciardi, U Michelucci.
+Dataset of fluorescence spectra and chemical parameters of olive oils. 2023.
+F Venturini, M Sperti, U Michelucci, A Gucciardi, VM Martos, MA Deriu.
+A Median Filter Approach to Deal with Large Windows of Missing Data in Eye-gaze Measurements. Horizon2020 conference, 2022.
+A Gucciardi, M Crotti, N Ben Itzhak, L Mailleux, E Ortibus, U Michelucci, V Groznik, A Sadikov.
+Physico-chemical properties extraction from the fluorescence spectrum with 1d-convolutional neural networks: application to olive oil. 2022.
+F Venturini, M Sperti, U Michelucci, A Gucciardi, VM Martose, MA Deriu. --></description></item><item><title>Compact optical fluorescence sensor for food quality control using artificial neural networks</title><link>https://demo.stack.jimmycai.com/p/compact-optical-fluorescence-sensor-for-food-quality-control-using-artificial-neural-networks/</link><pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/p/compact-optical-fluorescence-sensor-for-food-quality-control-using-artificial-neural-networks/</guid><description>&lt;img src="https://demo.stack.jimmycai.com/p/compact-optical-fluorescence-sensor-for-food-quality-control-using-artificial-neural-networks/oil.jpg" alt="Featured image of post Compact optical fluorescence sensor for food quality control using artificial neural networks" />&lt;p>&lt;strong>Responsible for the Data processing - Code (TensorFlow) - Writing - Figures - Presentations&lt;/strong>&lt;/p>
+&lt;!-- Machine learning feature extraction for predicting the ageing of olive oil.
+Data Science for Photonics and Biophotonics, 2024.
+A Gucciardi, S El Ghazouali, U Michelucci, F Venturini.
+Understanding the learning mechanism of convolutional neural networks applied to fluorescence spectra. AI and Optical Data Sciences IV, 2023.
+F Venturini, U Michelucci, M Sperti, A Gucciardi, MA Deriu.
+One-dimensional convolutional neural networks design for fluorescence spectroscopy with prior knowledge: explainability techniques applied to olive oil fluorescence spectra.
+Optical Sensing and Detection VII, 2022.
+F Venturini, U Michelucci, M Sperti, A Gucciardi, MA Deriu.
+Chemical analysis of olive oils from fluorescence spectra thanks to one-dimensional convolutional neural networks. Optical Sensing and Detection VII, 2022.
+M Sperti, A Gucciardi, U Michelucci, F Venturini, MA Deriu.
+Compact optical fluorescence sensor for food quality control using artificial neural networks: application to olive oil. Optical Sensing and Detection VII, 2022.
+A. Gucciardi, U Michelucci, F Venturini, M Sperti, MA Deriu. --></description></item><item><title>Extraction of physicochemical properties from the fluorescence spectrum with 1D convolutional neural networks</title><link>https://demo.stack.jimmycai.com/p/extraction-of-physicochemical-properties-from-the-fluorescence-spectrum-with-1d-convolutional-neural-networks/</link><pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/p/extraction-of-physicochemical-properties-from-the-fluorescence-spectrum-with-1d-convolutional-neural-networks/</guid><description>&lt;img src="https://demo.stack.jimmycai.com/p/extraction-of-physicochemical-properties-from-the-fluorescence-spectrum-with-1d-convolutional-neural-networks/oil.jpg" alt="Featured image of post Extraction of physicochemical properties from the fluorescence spectrum with 1D convolutional neural networks" />&lt;p>&lt;strong>Responsible for the Data processing - Code (TensorFlow) - Writing - Figures&lt;/strong>&lt;/p>
+&lt;!-- FlightScope: An Experimental Comparative Review of Aircraft Detection Algorithms in Satellite Imagery. Remote Sensing, 2024.
+S El Ghazouali, A Gucciardi, F Venturini, N Venturi, M Rueegsegger, U Michelucci. -->
+&lt;!-- Neurodevelopmental impairments prediction in premature infants based on clinical data and machine learning techniques. Stats, 2024.
+A Ortega-Leon, A Gucciardi, A Segado-Arenas, I Benavente-Fernández, D Urda, IJ Turias.
+Extraction of physicochemical properties from the fluorescence spectrum with 1D convolutional neural networks: Application to olive oil. Journal of Food Engineering, 2022.
+F Venturini, M Sperti, U Michelucci, A Gucciardi, VM Martos, MA Deriu. --></description></item><item><title>One-dimensional convolutional neural networks design for fluorescence spectroscopy with prior knowledge. Explainability techniques applied to olive oil fluorescence spectra</title><link>https://demo.stack.jimmycai.com/p/one-dimensional-convolutional-neural-networks-design-for-fluorescence-spectroscopy-with-prior-knowledge.-explainability-techniques-applied-to-olive-oil-fluorescence-spectra/</link><pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/p/one-dimensional-convolutional-neural-networks-design-for-fluorescence-spectroscopy-with-prior-knowledge.-explainability-techniques-applied-to-olive-oil-fluorescence-spectra/</guid><description>&lt;img src="https://demo.stack.jimmycai.com/p/one-dimensional-convolutional-neural-networks-design-for-fluorescence-spectroscopy-with-prior-knowledge.-explainability-techniques-applied-to-olive-oil-fluorescence-spectra/oil.jpg" alt="Featured image of post One-dimensional convolutional neural networks design for fluorescence spectroscopy with prior knowledge. Explainability techniques applied to olive oil fluorescence spectra" />&lt;p>&lt;strong>Responsible for the Data processing - Code (TensorFlow) - Writing - Figures - Presentations&lt;/strong>&lt;/p>
+&lt;!-- Machine learning feature extraction for predicting the ageing of olive oil.
+Data Science for Photonics and Biophotonics, 2024.
+A Gucciardi, S El Ghazouali, U Michelucci, F Venturini.
+Understanding the learning mechanism of convolutional neural networks applied to fluorescence spectra. AI and Optical Data Sciences IV, 2023.
+F Venturini, U Michelucci, M Sperti, A Gucciardi, MA Deriu.
+One-dimensional convolutional neural networks design for fluorescence spectroscopy with prior knowledge: explainability techniques applied to olive oil fluorescence spectra.
+Optical Sensing and Detection VII, 2022.
+F Venturini, U Michelucci, M Sperti, A Gucciardi, MA Deriu.
+Chemical analysis of olive oils from fluorescence spectra thanks to one-dimensional convolutional neural networks. Optical Sensing and Detection VII, 2022.
+M Sperti, A Gucciardi, U Michelucci, F Venturini, MA Deriu.
+Compact optical fluorescence sensor for food quality control using artificial neural networks: application to olive oil. Optical Sensing and Detection VII, 2022.
+A. Gucciardi, U Michelucci, F Venturini, M Sperti, MA Deriu. --></description></item></channel></rss>
